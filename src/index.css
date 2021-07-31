@@ -11,3 +11,99 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.container{
+  max-width: 960px;
+  min-height:100vh;
+  margin-left: auto;
+  margin-right:auto;
+  padding-right:15px;
+  padding-left: 15px;
+}
+.notes-list{
+  display: grid;
+  grid-gap:1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.note{
+  background-color: #fef68a;
+  border-radius:10px;
+  padding:1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+.note.new{
+  background-color: #14c9a4;
+
+}
+textarea{
+  background-color: #14c9a4 ;
+  border:none;
+  resize:none;
+}
+small{
+  font-size:16px;
+}
+textarea:focus{
+  outline:none;
+}
+.save-note{
+  background-color:whitesmoke;
+  border:none;
+  border-radius:15px;
+  padding:5px 10px 5px 10px;
+}
+.save-note:hover{
+  background-color:antiquewhite;
+  cursor:pointer;
+
+}
+.delete-icon{
+  width:30px;
+  height:30px;
+}
+.note-footer{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.search{
+  border-radius: 10px;
+  background-color:#dcefda;
+  display:flex;
+  align-items: center;
+  padding:5px;
+  margin-bottom: 20px;
+}
+.search input{
+  border:none;
+  background-color:#dcefda ;
+}
+.search input:focus{
+  outline:none;
+}
+.delete-icon{
+  cursor: pointer;
+}
+.save-note.dark{
+  background-color: darkviolet;
+  width:150px;
+  height:50px;
+  border-radius:40px;
+  font-size:18px;
+  font-family: "Arial Black";
+
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dark-mode{
+  background-color: black;
+}
+.dark-mode h1{
+  color: white;
+}
